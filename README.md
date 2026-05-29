@@ -1,14 +1,17 @@
 # ⚛️ React Todo App — Setup Guide
-> **Progress:** Day 2 · 26-05-2026
+>
+> **Progress:** Day 3 - 29/05/2026 : 12:45 pm
 
 ---
 
 ## 🐣 For Noobs — Getting Started
 
 ### Step 1
+
 Admit you are a noob if you do not know how to clone a repo.
 
 ### Step 2
+
 Pat yourself on the back because you are about to learn.
 
 ---
@@ -18,6 +21,7 @@ Pat yourself on the back because you are about to learn.
 Create a new folder on your Desktop (or anywhere you prefer).
 
 Then open **Command Prompt**:
+
 - Press `Win` and search for **cmd**
 - Open it and run:
 
@@ -47,7 +51,7 @@ Run this to see if Git is already installed:
 git --version
 ```
 
-If it's not, download and install it from: https://git-scm.com/download/win
+If it's not, download and install it from: <https://git-scm.com/download/win>
 
 Then come back and continue.
 
@@ -72,7 +76,7 @@ cd todo-mern-bootcamp
 <details>
 <summary>💡 What just happened?</summary>
 
-You now have a local copy of the repository, and your terminal is pointed inside that project folder. 
+You now have a local copy of the repository, and your terminal is pointed inside that project folder.
 
 </details>
 
@@ -108,3 +112,4 @@ npm run start
 ---
 
 > 🗜️ **Prefer not using Git?** You can also click the **Download ZIP** button on the GitHub page and extract it manually.
+
