@@ -1,6 +1,7 @@
-import {useState} from 'react'
+import {useState,useEffect} from 'react'
 import {Card} from './Card'
 import {Input} from './Input'
+import axios from 'axios'
 const initialTasks = [
         {id:0, text: "ONE"},
         {id:1, text:"Two"},
@@ -9,6 +10,18 @@ const initialTasks = [
 
 export const Tasks = ()=>{
     const [ tasks,setTasks] = useState(initialTasks)
+    
+    const fetchTasks = async ()=>{
+        try{
+            const response = await axios.get("http://localhost:8080/")
+            console.log(response)
+        }catch(error){
+            console.log(error)
+        }
+    }
+
+    useEffect(()=>{fetchTasks()},[])
+
     const addTaskHandler = (newTask)=>{
         setTasks((prev)=>{
             return [
