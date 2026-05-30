@@ -1,6 +1,6 @@
 # ⚛️ React Todo App — Setup Guide
 >
-> **Progress:** Day 3 - 29/05/2026 : 12:45 pm
+> **Progress:** Day 4 - 30/05/2026 : Noon 
 
 ---
 
