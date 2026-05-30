@@ -13,4 +13,22 @@ const createActivity=(req,res)=>{
     })
 }
 
-module.exports = {createActivity}
+const getActivity = (req,res)=>{
+    Activity.find()
+    .then((data)=>{res.json(data)})
+    .catch((error)=>{res.send(error)})
+}
+
+const deleteActivity = (req,res) =>{
+    Activity.findOneAndDelete({
+        activity_id: req.params.id
+    })
+    .then((data)=>{
+        res.send("Deleted Successfully")
+    })
+    .catch((error)=>{
+        res.send(error)
+    })
+}
+
+module.exports = {createActivity, getActivity, deleteActivity}
