@@ -38,7 +38,7 @@ export const Tasks = ()=>{
 
     const deleteTaskHandler = async (completedId)=>{
         try{
-             await axios.delete("http://localhost:8080/{completedId}")
+             await axios.delete(`http://localhost:8080/${completedId}`)
              await fetchTasks()
         }catch(error){
             console.log(error)
@@ -55,3 +55,7 @@ export const Tasks = ()=>{
         </div>
     )
 }
+
+
+// `localhost ${ddd}`
+// "localhost/"+ddd
