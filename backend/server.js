@@ -5,7 +5,7 @@ const { createActivity } = require("./controllers/activityController")
 
 const app = express()
 app.use(express.json()) //middleware 
-app.use(cors)
+app.use(cors())
 
 //DNS Fix for Mongodb
 const dns = require("dns")
