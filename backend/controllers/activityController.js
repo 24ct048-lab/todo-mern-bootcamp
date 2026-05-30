@@ -31,4 +31,4 @@ const deleteActivity = (req,res) =>{
     })
 }
 
-module.exports = {createActivity, getActivity, deleteActivity}
+module.exports = {createActivity, getActivity, deleteActivity }
